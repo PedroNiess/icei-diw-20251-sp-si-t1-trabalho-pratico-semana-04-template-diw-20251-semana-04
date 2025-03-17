@@ -13,19 +13,38 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Validate HTML
-      id: validate-html
-      uses: webtech-network/web-code-autograding@v1
+    - name: Teste HTML
+      id: teste-html
+      uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: Validate HTML
+        test-name: Teste HTML
         setup-command: npm install
         command: npm test validateHTML.test.js
-        procedure: validateHTMLFile
         timeout: 10
-        max-score: 100
+        max-score: 1
+    - name: Teste Git
+      id: teste-git
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Teste Git
+        setup-command: npm install
+        command: npm test validateGIT.test.js
+        timeout: 10
+        max-score: 1
+    - name: Teste CSS
+      id: teste-css
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Teste CSS
+        setup-command: npm install
+        command: npm test validateCSS.test.js
+        timeout: 10
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        VALIDATE-HTML_RESULTS: "${{steps.validate-html.outputs.result}}"
+        TESTE-HTML_RESULTS: "${{steps.teste-html.outputs.result}}"
+        TESTE-GIT_RESULTS: "${{steps.teste-git.outputs.result}}"
+        TESTE-CSS_RESULTS: "${{steps.teste-css.outputs.result}}"
       with:
-        runners: validate-html
+        runners: teste-html,teste-git,teste-css
