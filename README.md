@@ -8,10 +8,10 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Pedro Augusto Niess Ferreira
+- Matricula: 1540911
+- Proposta de projeto escolhida: Site de receitas 
+- Breve descrição sobre seu projeto: Este projeto é um site de receitas culinárias organizado por categorias, incluindo entradas, pratos principais e sobremesas. Ele permite que os usuários busquem receitas pelo nome ou ingredientes, favoritem suas favoritas e visualizem detalhes completos de cada prato. O design é inspirado em uma estética moderna e intuitiva, garantindo uma navegação agradável e eficiente.
 
 ## Print da versão responsiva com CSS puro
 
