@@ -17,11 +17,7 @@ Nessa atividade, vamos evoluir o projeto para que a home-page funcione bem tanto
   - O design é inspirado em uma estética moderna e intuitiva, garantindo uma navegação agradável e eficiente.
   - Inicialmente, a responsividade foi implementada usando **CSS puro**, mas foi aprimorada com **Bootstrap** para melhor adaptação a diferentes dispositivos.
 
-## Print da versão responsiva com CSS puro
-
-![Versão CSS Puro](public/print.png)
-
-## Print da versão responsiva com Bootstrap
+## Print de ambas as versões:
 
 ![Versão Bootstrap](public/print.png)
 
